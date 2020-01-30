@@ -1,0 +1,43 @@
+@charset "utf-8";
+/* CSS Document */
+
+#slider {
+	overflow: hidden;
+}
+#slider figure {
+	position: relative;
+	width: 500%;
+	margin: 0;
+	left: 0;
+	animation: 10s slider infinite;
+}
+#slider figure img {
+	margin: 0 8%;
+	width: 4%;
+	float: left;
+}
+
+@keyframes slider {
+	0% {
+		left: 0;
+	}
+	40% {
+		left: 0;
+	}
+	50% {
+		left: -100%;
+	}
+	90% {
+		left: -100%;
+	}
+	100% {
+		left: -200%;
+	}
+}
+
+@media screen and (max-width: 500px){
+	#caroussel{
+		display: none;
+	}
+	
+}

@@ -1,0 +1,95 @@
+@charset "utf-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+
+
+
+.produits 
+{
+	padding: 10px;
+	display: grid;
+	grid-template-columns: 25% 25% 25% 25%;
+}
+
+
+
+.card{
+	margin: 20px;
+	width: 360px;
+	background: #f1f1f1;
+}
+
+.top-section{
+	height: 310px;
+	overflow: hidden;
+	background: #fff;
+	position: relative;
+	
+}
+
+#image-container{
+	width: 300px;
+	height: 300px;
+	margin: 40px 0 0 30px;
+}
+
+/*
+.nav-img{
+	text-align: center;
+}
+
+.nav-img img{
+	width: 75px;
+	height: 75px;
+	border: solid 2px black;
+	margin: 8px 2px;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+.nav-img img:hover{
+	border-color: crimson;
+}
+*/
+
+.price{
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	color: #5A86DD;
+	font-size: 24px;
+	font-family: 'Quicksand';
+}
+
+.product-info{
+	height: 145px;
+	padding: 24px;
+}
+
+.name{
+	text-transform: uppercase;
+	font-size: 26px;
+	font-family: 'Montserrat';
+}
+
+.description{
+	font-size: 15px;
+	opacity: 0.7;
+	height: 36px;
+	font-family: 'Roboto';
+	text-align: justify;
+}
+
+
+.btn-cart{
+	display: block;
+	background: #5A86DD;
+	text-align: center;
+	color: #fff;
+	padding: 10px;
+	margin-top: 10px;
+	transition: 0.3s;
+}
+.btn-cart:hover{
+	background: #333;
+}

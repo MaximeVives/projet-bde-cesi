@@ -1,0 +1,24 @@
+@charset "utf-8";
+/* CSS Document */
+
+@media screen and (max-width: 1550px){
+	.produits 
+	{
+		grid-template-columns: 33% 34% 33%;
+	}
+}
+
+
+@media screen and (max-width: 1200px){
+	.produits 
+	{
+		grid-template-columns: 50% 50%;
+	}
+}
+
+@media screen and (max-width: 775px){
+	.produits 
+	{
+		grid-template-columns: 100%;
+	}
+}

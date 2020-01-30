@@ -1,0 +1,35 @@
+@charset "utf-8";
+/* CSS Document */
+
+.legal{
+	display: block;
+	margin: 20px 50px;
+	text-align: justify;
+}
+
+.legal h1{
+	margin-bottom: 30px;
+	text-align: center;
+	font-size: 40px;
+	border-bottom: 2px solid #FFF;
+}
+
+.legal h2{
+	font-family: "Roboto";
+}
+
+.legal p{
+	font-size: 16px;
+	margin-bottom: 20px;
+	font-family: "Roboto";
+}
+
+
+.legal h1, .legal h2, .legal h3{
+	color: #F0F0F0;
+}
+
+.legal strong{
+	font-size: 24px;
+	
+}

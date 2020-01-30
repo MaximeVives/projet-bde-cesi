@@ -1,0 +1,155 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/*======================WIDTH============================*/
+/*======================1050============================*/
+@media screen and (max-width: 1050px){
+	.nav-box{
+		height: 125px;
+		grid-template-columns: 20% 50% 30%;
+		padding-left: 5px;
+	}
+	
+	nav ul li{
+		padding: 5px;
+		list-style: none;
+
+	}
+	
+	.search-zone:hover .search-txt{
+		width: 140px;
+		padding: 0 6px;
+	}
+	
+	.log-reg{
+		padding: 5px;
+	}
+}
+/*==================================================*/
+
+/*=======================800===========================*/
+@media screen and (max-width: 800px){
+	.welcome{
+		background-image: url(../image/cesi-corporate/CESI_Corporate_Ecole_Ingenieurs-944x512.png);
+	}
+	
+	nav ul{
+		display: flex;
+		flex-direction: column;
+	}
+	
+	.nav-box{
+		height: 125px;
+		grid-template-columns: 30% 40% 30%;
+	}
+	
+	nav ul li {
+		text-align: center;
+	}
+	
+}
+/*==================================================*/
+
+/*=========================600=========================*/
+@media screen and (max-width: 600px){
+	.welcome{
+		background-image: url(../image/cesi-corporate/CESI_Corporate_Ecole_Ingenieurs-480x480.png);
+	}
+}
+/*==================================================*/
+
+/*=========================450=========================*/
+@media screen and (max-width: 450PX){
+	.log-reg h2{
+		font-size: 15px;
+	}
+	.log-reg p{
+		font-size: 10px;
+		grid-area: log;
+	}
+	
+	nav ul li a{
+		font-size: 17px;		
+	}
+	
+	.search-zone:hover .search-txt{
+		width: 50px;
+		padding: 0 0px;
+	}
+}
+/*==================================================*/
+
+
+
+
+/*========================HEIGHT==========================*/
+
+
+@media screen and (max-height: 250px){
+	.welcome .logo-title img{
+		width: 100px;
+		height: 72px;
+	}	
+	
+	.welcome .arrow-down{
+		transform: translateY(0vh);
+	}
+
+	.arrow-down img{
+		width: 60px;
+		height: 40px;
+	}
+	
+	.title{
+		bottom: 20%;
+	}
+	
+}
+
+@media screen and (max-height: 530px){
+		.title{
+		bottom: 30%;
+	}
+}
+
+
+@media screen and (max-height: 550px){
+	.welcome .logo-title img{
+		width: 200px;
+		height: 144px;
+	}	
+	
+	.welcome .arrow-down{
+		transform: translateY(10vh);
+	}
+
+	.arrow-down img{
+		width: 90px;
+		height: 60px;
+	}
+	
+}
+
+
+
+
+@media screen and (max-height: 900px){
+	.welcome .logo-title img{
+		width: 300px;
+		height: 216px;
+	}
+	
+	
+	.welcome .arrow-down{
+		transform: translateY(25vh);
+	}
+
+	.arrow-down img{
+		width: 120px;
+		height: 80px;
+	}
+	
+}
+
+/*==================================================*/

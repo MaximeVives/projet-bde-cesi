@@ -1,0 +1,420 @@
+@charset "utf-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap'); /*'Roboto'*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap'); /*'Montserrat'*/
+/*Import des google fonts*/
+
+
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+	text-decoration: none;
+}
+
+
+.welcome{
+	min-height: 100vh;
+	background-image: url(../image/cesi-corporate/CESI_Corporate_Ecole_Ingenieurs.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+/*url doit prendre une modif responsive pour la taille de l'image*/
+
+.welcome .logo-title{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/*transform: translateY(10vh);*/
+}
+/*transform doit prendre une modif responsive*/
+
+.title{
+	display: flex;
+	position: absolute;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	bottom: 50%;
+}
+
+.title h1{
+	align-items: center;
+	text-align: center;
+	font-family: 'Montserrat';
+	font-size: 50px;
+	color: #5A86DD;
+	border-bottom: 2px solid rgba(0, 0, 0, 0);
+	transition: 0.2s;
+	cursor: pointer;
+}
+
+.title h1:hover{
+	border-bottom: 2px solid #5A86DD;
+}
+
+.welcome .arrow-down{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transform: translateY(50vh);
+}
+/*transform doit prendre une modif responsive*/
+
+
+
+.arrow-down img{
+	width: 150px;
+	height: 100px;
+}
+
+/*Taille doit prendre une modif responsive*/
+/*----------------------------------------------------------------------------------------*/
+
+.page{
+	/*min-height: 100vh;*/
+	background: #5A86DD;
+}
+/*Deuxieme partie de la page d'accueil et page principale des autres pages*/
+
+
+.nav-box{
+	background-color: #000000;
+	height: 100px;
+	display: grid;
+	grid-template-columns: 25% 50% 25%;
+}
+/*Bande noire au top de la page pour la navigation*/
+/*Séparé en trois collonnes à gauche le Burger au milieu le menu et à droite la barre de recherche*/
+
+/*===============LOGIN/REGISTER===============*/
+.log-reg{
+	background: #000;
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	grid-template-areas:
+		"dessus"
+		"dessous"
+}
+
+.log-reg h2, .log-reg p{
+	color: white;
+}
+
+.log-reg h2{
+	font-family: 'Montserrat';
+	font-size: 20px;
+	grid-area: dessus;
+}
+
+.log-reg p{
+	font-size: 15px;
+	grid-area: dessous;
+}
+
+.inscr, .connex{
+	color : #5A86DD;
+	border-bottom: solid 2px rgba(0, 0, 0, 0);
+	transition: 0.3s;
+}
+
+
+.connex:hover, .inscr:hover{
+	color: #fff;
+	border-bottom: solid 2px #fff;
+}
+
+/*==============================*/
+/*==============CART================*/
+
+.btn-pannier{
+	color : #5A86DD;
+	border-bottom: solid 2px rgba(0, 0, 0, 0);
+	transition: 0.3s;
+	font-family: 'Montserrat';
+	font-size: 20px;
+	grid-area: dessus;
+}
+
+
+.btn-disconnect a{
+	color : #5A86DD;
+	border-bottom: solid 2px rgba(0, 0, 0, 0);
+	transition: 0.3s;
+	font-family: 'Montserrat';
+	font-size: 15px;
+	grid-area: dessous;
+}
+
+.btn-pannier:hover, .btn-disconnect a:hover{
+	color: #fff;
+	border-bottom: solid 2px #fff;
+}
+
+/*==============================*/
+
+
+/*===============NAVIGATION===============*/
+nav{
+	background: #000;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+nav ul{
+	display: flex;
+	flex-direction: row;
+}
+
+nav ul li{
+	padding: 20px;
+	list-style: none;
+	
+}
+
+nav ul li a{
+	text-decoration: none;
+	color: whitesmoke;
+	font-size: 20px;
+	font-family: 'Montserrat';
+	border-bottom: 2px solid rgba(0, 0, 0, 0);
+	transition: 0.3s;
+}
+
+nav ul li a:hover{
+	border-bottom: 2px solid white;
+}
+
+
+/*==============================*/
+
+/*===============SEARCH-BAR===============*/
+
+
+.search-box{
+	background: #000;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.search-zone{
+	background: #5A86DD;
+	position: relative;
+	height: 40px;
+	border-radius: 40px;
+	padding: 10px;
+}
+
+.search-zone:hover .search-txt{
+	width: 240px;
+	padding: 0 6px;
+}
+
+
+.search-btn{
+	color: #fff;
+	/*float: right;*/
+	font-size: 18px;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background-color: #5A86DD;
+	/*display: flex;*/
+	justify-content: center;
+	align-items: center;
+	transition: 0.4s;
+	
+}
+
+.search-txt{
+	border: none;
+	background: none;
+	outline: none;
+	float: left;
+	padding: 0;
+	color: white;
+	font-size: 18px;
+	transition: 0.4s;
+	/*line-height: 50px;*/
+	width: 0px;
+	/*justify-content: center;
+	align-items: center;*/
+}
+
+/*==============================*/
+
+/*Corp de page*/
+main{
+	min-height: calc(100vh - 200px);
+	
+}
+
+/*Meteo box*/
+.weather{
+	margin-top: 20px;
+	position: absolute;
+	right: 10%;
+	padding: 10px;
+	border: 3px solid white;
+	border-radius: 30px;
+}
+
+.weather h2{
+	color: #fff;
+	text-align: right;
+	font-family: 'Montserrat';
+	font-size: 30px;
+	text-transform: uppercase;
+}
+
+.weather p{
+	color: #E7E7E7;
+	text-align: justify;
+	font-family: 'Roboto';
+	font-size: 15px;
+	
+}
+
+.activite{
+	color: #fff;
+	text-align: left;
+	margin: 20px 20px 0;
+	font-family: 'Montserrat';
+	font-size: 30px;
+	text-transform: uppercase;
+}
+
+
+
+
+
+
+
+.color-code{/*Code couleur cesi haut droite*/
+	background: linear-gradient(0deg,hsla(64,100%,44%,1),hsla(64,100%,44%,1) 25%,hsla(30,100%,46%,1) 0,hsla(30,100%,46%,1) 50%,hsla(219,63%,61%,1) 0,hsla(219,63%,61%,1) 75%,hsla(173,100%,32%,1) 0,hsla(173,100%,32%,1));
+    content: '';
+    display: block;
+    height: 120px;
+    position: absolute;
+    right: 0;
+    top: 20px;
+    width: 10px;
+}
+
+
+/*===============FOOTER===============*/
+footer{
+	font-family: 'Roboto';
+	background-color: #000;
+}
+
+/*==========Legal==========*/
+
+footer .legal{
+	display: grid;
+	grid-template-columns: 25% 25% 25% 25%;
+	background-color: #000;
+	height: 50px;
+	justify-content: center;
+	align-items: center;
+	position: static;
+	
+}
+
+footer .legal a{
+	text-align: center;
+	color: #fff;
+	font-size: 13px;	
+}
+
+/*==========Social==========*/
+
+footer .social{
+	display: flex;
+	height: 50px;
+	align-items: center;
+	justify-content: center;
+}
+
+.share-button{
+	width: 40%;
+	height: 45px;
+	background-color: #fff; 
+	border-radius: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+	position: relative;
+	cursor: pointer;
+	transition: .3s linear;
+	
+}
+
+.share-button:hover{
+	transform: scale(1.1);
+}
+
+.share-button span{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,1.00);
+	color: #fff;
+	text-align: center;
+	font-size: 26px;
+	line-height: 45px;
+	z-index: 999;
+	transition: 0.6s linear;
+	border-radius: 40px;
+	/*opacity: 0;*//*Rajout*/
+}
+
+.share-button span i{
+	padding: 0 10px;
+}
+
+.share-button:hover span{
+	transform: translateX(-100%);
+	transition-delay: 0.3s;
+}
+
+.share-button a{
+	flex: 1;
+	font-size: 26px;
+	color: #000;
+	text-align: center;
+}
+
+.share-button a .fa-facebook:hover{
+	color: #3b5998;
+}
+
+.share-button a .fa-twitter:hover{
+	color: #00acee;
+}
+
+.share-button a .fa-instagram:hover{
+	color: #3f729b;
+}
+
+.share-button a .fa-linkedin-in:hover{
+	color: #0e76a8 ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
